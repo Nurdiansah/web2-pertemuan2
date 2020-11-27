@@ -3,7 +3,8 @@
 
 if (isset($_POST['simpan'])) {
     //
-    $jumlah_harga = $_POST['jml_item'] * $_POST['harga'];
+    $harga = 'Rp. ' . number_format($_POST['harga'], 0, ",", ".");
+    $jumlah_harga = 'Rp. ' . number_format($_POST['jml_item'] * $_POST['harga'], 0, ",", ".");
 }
 
 
@@ -28,8 +29,8 @@ if (isset($_POST['simpan'])) {
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-info">
-        <span class="navbar-brand mb-0 h1">Home</span>
+    <nav class="navbar navbar-light bg-primary">
+        <a class="navbar-brand mb-0 h1" href="index.php">Home</a>
         <a class="nav-link text-dark float-left" href="profile.php">Profile</a>
     </nav>
     <div class="container">
@@ -78,7 +79,7 @@ if (isset($_POST['simpan'])) {
                             <th scope="row">1</th>
                             <td><?= $_POST['nm_item'] ?></td>
                             <td><?= $_POST['jml_item'] ?></td>
-                            <td><?= $_POST['harga'] ?></td>
+                            <td><?= $harga ?></td>
                             <td><?= $jumlah_harga; ?></td>
                         </tr>
                     </tbody>

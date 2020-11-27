@@ -28,38 +28,42 @@ if (isset($_POST['simpan'])) {
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-info">
+    <nav class="navbar navbar-light bg-primary">
         <a class="navbar-brand mb-0 h1" href="index.php">Home</a>
         <a class="nav-link text-dark float-left" href="profile.php">Profile</a>
     </nav>
     <div class="container">
         <div class="row">
-            <!-- Form -->
-            <div class="col-sm-12 col-md-4 mt-3">
+            <!-- Profile -->
+            <div class="col-sm-12 col-md-4">
+                <div class="card mt-3" style="width: 100%;">
+                    <img src="nurdiansah.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title">Profile</h4>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Nurdiansah</li>
+                        <li class="list-group-item">Web Developer <a href="http://www.ekanuri.com/">PT.Ekanuri</a></li>
+                        <li class="list-group-item">Backend Developer <a href="https://codevintek.com/">Codevintek Development</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- quote -->
+            <div class="col-sm-12 col-md-8 mt-3">
                 <div class="card">
-                    <div class="card-header bg-danger">
-                        Profile
+                    <div class="card-header">
+                        Quote
                     </div>
                     <div class="card-body">
-                        <form action="" method="POST">
-                            <div class="form-group">
-                                <label>Nama Peralatan</label>
-                                <input type="text" class="form-control" name="nm_item">
-                            </div>
-                            <div class=" form-group">
-                                <label>Jumlah</label>
-                                <input type="text" class="form-control" name="jml_item">
-                            </div>
-                            <div class=" form-group">
-                                <label>Harga Satuan</label>
-                                <input type="text" class="form-control" name="harga">
-                            </div>
-                            <button type="submit" name="simpan" class="btn btn-primary float-right">Tambah</button>
-                        </form>
+                        <blockquote class="blockquote mb-0">
+                            <p>"Jika kamu tidak sanggup menahan lelahnya belajar maka kamu harus sanggup menahan lelahnya kebodohan" <footer class="blockquote-footer">Imam Syafi'i</footer>
+                        </blockquote>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 </body>
 
 </html>
